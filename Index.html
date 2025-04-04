@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<Header></Header>
+<body>
+ 
+
+
+<h1></h1>
+
+<div id="clock"></div>
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+         
+          // Add leading zero to numbers < 10
+          m = checkTime(m);
+          s = checkTime(s);
+         
+          document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+          setTimeout(startTime, 500);
+        }
+       
+        function checkTime(i) {
+          return i < 10 ? "0" + i : i;
+        }
+       
+        // Start the clock when page loads
+        window.onload = startTime;
+      </script>
+
+      <body>
+        CALMA BOLSONARO FAZ O 'L'
+      </body>
+
+<script>alert("Bem-vindo ao JavaScript!");</script>
+
+
+
+
+</body>
+</html>
